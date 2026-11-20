@@ -1,0 +1,20 @@
+[package]
+name = "buildar-headless-core"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "GPL-3.0-or-later"
+description = "What every buildAR headless engine hosts the same way: a recompiled game's library loaded and called, its sound tapped, the controllers as a pad's axes, the runtime's world in a game's own units and axes, a stand-in model. No game in it."
+
+[lib]
+name = "headless_core"
+path = "src/lib.rs"
+
+[dependencies]
+# The engine contract (a host pins the same revision).
+engine-core = { git = "https://github.com/rhythmerc/buildar-engine-core", rev = "1d66ba37ca305a637ba547fb77aa389539bee9c8" }
+# A game is a library built from the player's own disc, loaded where they keep it: never linked.
+libloading = "0.8"
+
+[profile.dev]
+opt-level = 3
