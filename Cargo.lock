@@ -19,7 +19,7 @@ checksum = "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
 [[package]]
 name = "engine-core"
 version = "0.1.0"
-source = "git+https://github.com/rhythmerc/buildar-engine-core?rev=1d66ba37ca305a637ba547fb77aa389539bee9c8#1d66ba37ca305a637ba547fb77aa389539bee9c8"
+source = "git+https://github.com/rhythmerc/buildar-engine-core?rev=53880bada814385d0c3c96fcd4db808f02de737d#53880bada814385d0c3c96fcd4db808f02de737d"
 dependencies = [
  "glam",
  "serde",
